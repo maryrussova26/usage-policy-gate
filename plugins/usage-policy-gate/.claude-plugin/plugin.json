@@ -1,0 +1,15 @@
+{
+  "name": "usage-policy-gate",
+  "version": "0.1.0",
+  "description": "Unofficial pre-submit filter: checks your prompts against the public Anthropic Usage Policy, explains problems, offers compliant alternatives. Not affiliated with Anthropic.",
+  "license": "MIT",
+  "keywords": [
+    "usage-policy",
+    "safety",
+    "validator",
+    "hooks"
+  ],
+  "author": {
+    "name": "usage-policy-gate contributors"
+  }
+}

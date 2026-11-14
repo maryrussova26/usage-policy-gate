@@ -1,0 +1,12 @@
+{
+  "name": "usage-policy-gate-marketplace",
+  "description": "Unofficial prompt filter for the public Anthropic Usage Policy",
+  "owner": { "name": "usage-policy-gate contributors" },
+  "plugins": [
+    {
+      "name": "usage-policy-gate",
+      "source": "./plugins/usage-policy-gate",
+      "description": "Checks prompts before they are sent: warns, explains, offers compliant alternatives; lets you knowingly accept risk in gray areas."
+    }
+  ]
+}

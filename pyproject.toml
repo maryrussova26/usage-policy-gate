@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "usage-policy-gate"
+version = "0.1.0"
+description = "Unofficial pre-submit validator that checks prompts against the public Anthropic Usage Policy and gives clear hints. Not affiliated with Anthropic."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = []
+
+[project.scripts]
+policy-gate = "policy_gate.cli:main"
+policy-gate-claude-code-hook = "policy_gate.claude_code_hook:main"
+policy-gate-server = "policy_gate.inference_server:main"
+
+[tool.setuptools.packages.find]
+where = ["plugins/usage-policy-gate/lib"]
