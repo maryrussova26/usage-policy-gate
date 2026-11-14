@@ -9,12 +9,12 @@ A pre-submit request checker that maps prompts to the **public** Anthropic Usage
 
 ## Install (Claude Code, one minute)
 ```
-/plugin marketplace add <owner>/<repo>
+/plugin marketplace add maryrussova26/usage-policy-gate
 /plugin install usage-policy-gate@usage-policy-gate-marketplace
 ```
 Then every prompt you submit is checked locally before it reaches Claude. No data leaves your machine, nothing is logged.
 Requires `python3` on PATH. Skill-only use (claude.ai): upload `plugins/usage-policy-gate/skills/usage-policy-gate/`.
-Pip alternative: `pip install git+https://github.com/<owner>/<repo>`.
+Pip alternative: `pip install git+https://github.com/maryrussova26/usage-policy-gate`.
 
 ## Verdicts
 | Level | Meaning | Proceeds? |
